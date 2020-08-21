@@ -1,0 +1,104 @@
+section#contact {
+  line-height: 18pt;
+  padding: 100px 0 130px 0;
+  position: relative;
+}
+
+section#contact svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+section#contact .container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+section#contact .header {
+  color: #fff;
+}
+
+.header {
+  color: #444649;
+  font-weight: bold;
+  font-size: 25pt;
+  position: relative;
+}
+
+.header-bar {
+  background: #444649;
+  height: 4px;
+  margin: 25px 0 75px 0;
+  width: 70px;
+}
+
+section#contact .header-bar {
+  background: #fff;
+  margin: 25px 0 40px 0;
+  width: 110px;
+}
+
+section#contact .highlight {
+  color: #04c2c9;
+  font-weight: 600;
+}
+
+section#contact form {
+   margin: 40px auto 0 auto;
+   min-width: 95%;
+ }
+
+section#contact mat-form-field {
+  background: #1e242c;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+mat-label {
+  color: #ffffff;
+}
+
+.mat-input-element::placeholder{
+  color: #ffffff;
+}
+
+.form_btn-submit {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  float: right;
+  font-size: 12pt;
+  margin: 10px 0 0 0;
+  outline: 0;
+  padding: 6px 30px;
+}
+
+@media screen and (min-width: 600px) {
+  section#contact {
+    background: #252934;
+    color: #fff;
+    padding-top: 175px;
+  }
+  .header {
+    font-size: 30pt;
+  }
+  .header-bar {
+    margin: 25px 0 100px 0;
+  }
+
+  section#contact form {
+    min-width: 500px;
+  }
+}
+

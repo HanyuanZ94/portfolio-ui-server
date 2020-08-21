@@ -1,0 +1,60 @@
+<section id="contact">
+  <svg
+    preserveAspectRatio="none"
+    viewBox="0 0 100 102"
+    height="75"
+    width="100%"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    class="svgcolor-light"
+  >
+    <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+  </svg>
+  <div class="container flex">
+    <div class="header waypoint" data-animation="slide-in-left">
+      CONTACT
+    </div>
+    <div
+      class="header-bar waypoint"
+      data-animation="slide-in-right"
+      data-delay=".25s"
+    ></div>
+    <div
+      class="highlight waypoint"
+      data-animation="slide-in-right"
+      data-delay=".5s"
+    >
+      Have a question ?
+    </div>
+
+    <form class="waypoint" (ngSubmit)="sendMail()">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="email" [formControl]="emailFormControl" placeholder="Ex. hello@example.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Object</mat-label>
+        <input matInput type="text" [formControl]="objectFormControl" placeholder="Ex. job opportunities">
+        <mat-error *ngIf="objectFormControl.hasError('required')">
+          Please enter an object for the message
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Message</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+
+      <button mat-flat-button type="submit" class="form_btn-submit">Send</button>
+    </form>
+
+
+  </div>
+</section>
