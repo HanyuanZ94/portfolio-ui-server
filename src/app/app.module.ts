@@ -10,12 +10,14 @@ import { ContactComponent } from './contact/contact.component';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    ContactComponent
+    ContactComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

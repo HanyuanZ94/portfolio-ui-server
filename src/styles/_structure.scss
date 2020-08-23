@@ -5,6 +5,27 @@
   justify-content: center;
 }
 
+.header {
+  color: #444649;
+  font-weight: bold;
+  font-size: 25pt;
+  position: relative;
+}
+
 form {
   display: block;
+}
+
+section {
+  color: #616161;
+  line-height: 11pt;
+  padding: 70px 0 70px 0;
+  position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    line-height: 18pt;
+    padding: 100px 0 130px 0;
+  }
 }

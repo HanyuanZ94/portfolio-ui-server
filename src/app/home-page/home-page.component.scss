@@ -1,6 +1,7 @@
+@import "src/styles/mixins";
 @font-face {
   font-family: "Kaushan-Regular";
-  src: url("src/assets/fonts/Kaushan-Regular.otf");
+  src: url("/assets/fonts/Kaushan-Regular.otf");
 }
 
 section#home {
@@ -10,7 +11,7 @@ section#home {
 }
 
 .canvas {
-  background: url('src/assets/images/home_bg.png');
+  background: url('/assets/images/home_bg.png');
   height: 100%;
   left: 0;
   position: absolute;
@@ -28,19 +29,11 @@ section#home .text {
 }
 
 section#home .highlight {
-  font-family: "Kaushan-Regular";
+  font-family: "Kaushan-Regular", sans-serif;
 }
 
-.button {
-  border: 2px solid #fff;
-  box-sizing: inherit;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 13pt;
-  padding: 10px 20px;
-  transition: all 0.5s;
-}
 section#home .button {
+  @include button;
   margin-bottom: 53px;
   padding: 12px 40px 12px 15px;
   position: relative;
