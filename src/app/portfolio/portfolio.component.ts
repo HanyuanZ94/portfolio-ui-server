@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import * as portfolio from 'src/data/portfolio.json';
+import projects from 'src/assets/data/portfolio.json';
 import {Project} from '../../model/portfolio';
 
 @Component({
@@ -8,12 +8,12 @@ import {Project} from '../../model/portfolio';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  projects: Project[] = portfolio;
+  projects: Project[] = projects;
   constructor() {
   }
 
   ngOnInit(): void {
-    console.log(this.projects);
+    console.log(this.projects[0].name);
   }
 
 }
