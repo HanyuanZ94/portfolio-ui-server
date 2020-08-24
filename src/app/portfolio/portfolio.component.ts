@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+// @ts-ignore
 import projects from 'src/assets/data/portfolio.json';
 import {Project} from '../../model/portfolio';
 
