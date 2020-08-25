@@ -1,3 +1,5 @@
+@import "src/styles/variables";
+
 /* Grid styles -------------------------------------------------*/
 .cards {
   display: grid;
@@ -56,10 +58,38 @@ article {
   object-fit: cover;
 }
 
-.article-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.project-details {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+
+  h3 {
+    margin-top: 0;
+    a {
+      color: #333;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.project-tags {
+  margin-top: 15px;
+
+  .tag {
+    display: inline-block;
+    padding: 3px 5px;
+    //background: saturate($secondary_color, 25%);
+    border-radius: 2px;
+    font-size: 12px;
+    margin: 2px 2px 2px 0;
+    color: $secondary_color;
+    cursor: pointer;
+
+    &:hover {
+      //background: saturate($secondary_color, 25%);
+    }
+
+    &.active {
+      color: shade($tertiary_color, 20%);
+      background: tint($tertiary_color, 50%);
+    }
+  }
 }

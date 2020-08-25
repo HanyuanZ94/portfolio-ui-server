@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 // @ts-ignore
 import projects from 'src/assets/data/portfolio.json';
-import {Project} from '../../model/portfolio';
+import {Project} from '../../model/project';
 
 @Component({
   selector: 'app-portfolio',
@@ -14,7 +14,6 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.projects[0].name);
   }
 
 }

@@ -4,8 +4,8 @@ import { Routes, RouterModule, ActivatedRoute, ParamMap } from '@angular/router'
 import {HomePageComponent} from './home-page/home-page.component';
 
 const routes: Routes = [
-  {path: 'homePage-Component', component: HomePageComponent},
-  {path: '', redirectTo: '/homePage-Component', pathMatch: 'full'},
+  {path: 'homePage', component: HomePageComponent},
+  {path: '', redirectTo: '/homePage', pathMatch: 'full'},
   {path: '**', component: HomePageComponent}
 ];
 

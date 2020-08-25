@@ -1,14 +1,33 @@
 [
   {
-    "name": "Complete Trailers",
-    "where": "Digital Telepathy",
-    "url": "http://www.completetrailers.com/",
+    "name": "Project 1",
+    "url": "http://www.sfr.fr/",
     "tags": [
-      "WordPress",
-      "Custom Theme",
-      "HTML5/CSS3",
-      "Responsive",
-      "jQuery"
+      "Spring Boot",
+      "Angular",
+      "HTML5/CSS3"
+    ],
+    "img": "completetrailers.png",
+    "description": ""
+  },
+  {
+    "name": "Project 2",
+    "url": "http://www.sfr.fr/",
+    "tags": [
+      "Spring Boot",
+      "Angular",
+      "HTML5/CSS3"
+    ],
+    "img": "completetrailers.png",
+    "description": ""
+  },
+  {
+    "name": "Project 3",
+    "url": "http://www.sfr.fr/",
+    "tags": [
+      "Spring Boot",
+      "Angular",
+      "HTML5/CSS3"
     ],
     "img": "completetrailers.png",
     "description": ""
