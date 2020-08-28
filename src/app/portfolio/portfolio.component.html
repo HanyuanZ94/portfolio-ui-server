@@ -8,8 +8,8 @@
     <img class="article-img" src="http://placekitten.com/305/205" alt=" "/>
       <div class="project-details">
         <h3><a href="/" target="_blank">{{project.name}}</a></h3>
-        <div class="project-tags" *ngFor="let tag of project.tags">
-          <span class="tag" >{{tag}}</span>
+        <div class="project-tags">
+          <span class="tag" *ngFor="let tag of project.tags">{{tag}}</span>
         </div>
       </div>
   </article>

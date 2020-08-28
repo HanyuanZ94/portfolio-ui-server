@@ -11,13 +11,16 @@ import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     ContactComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    WorkExperienceComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

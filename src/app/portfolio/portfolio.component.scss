@@ -21,7 +21,6 @@
   color: white;
   background: url('https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509') center #333 no-repeat;
   background-size: cover;
-  color: white;
   text-shadow: 0px 0px 5px #000;
 }
 
@@ -63,28 +62,32 @@ article {
 
   h3 {
     margin-top: 0;
+
     a {
       color: #333;
       padding-bottom: 15px;
+      text-decoration-line: initial;
     }
   }
 }
 
 .project-tags {
   margin-top: 15px;
+  align-self: flex-end;
+  width: 100%;
 
   .tag {
     display: inline-block;
     padding: 3px 5px;
-    //background: saturate($secondary_color, 25%);
+    background: #cbeade;
     border-radius: 2px;
     font-size: 12px;
-    margin: 2px 2px 2px 0;
-    color: $secondary_color;
+    margin: 2px 5px 2px 0;
+    color: #538a76;
     cursor: pointer;
 
     &:hover {
-      //background: saturate($secondary_color, 25%);
+      background: #e0f3eb;
     }
 
     &.active {
