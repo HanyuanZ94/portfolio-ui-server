@@ -9,20 +9,16 @@ export class HomePageComponent implements OnInit {
 
   links = [
     {
-      name: 'home',
-      link: '/homePage'
+      name: 'home'
     },
     {
-      name: 'about',
-      link: '/homePage'
+      name: 'about'
     },
     {
-      name: 'portfolio',
-      link: '/portfolio'
+      name: 'portfolio'
     },
     {
-      name: 'contact',
-      link: '/contact'
+      name: 'contact'
     }];
   activeLink = this.links[0];
 

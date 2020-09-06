@@ -76,6 +76,9 @@ article {
   align-self: flex-end;
   width: 100%;
 
+  .selected {
+    background: #cbeade;
+  }
   .tag {
     display: inline-block;
     padding: 3px 5px;
@@ -95,4 +98,12 @@ article {
       background: tint($tertiary_color, 50%);
     }
   }
+}
+
+.notVisible {
+  opacity: 0.4;
+}
+
+.mat-chip.mat-standard-chip::after {
+  background: none;
 }

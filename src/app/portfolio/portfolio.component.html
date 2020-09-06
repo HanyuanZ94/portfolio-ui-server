@@ -4,13 +4,14 @@
   </div>
 </section>
 <section class="cards">
-  <article *ngFor="let project of projects">
+  <article *ngFor="let project of projects" [ngClass]="isCardVisible(project) ? '' : 'notVisible'">
     <img class="article-img" src="http://placekitten.com/305/205" alt=" "/>
-      <div class="project-details">
-        <h3><a href="/" target="_blank">{{project.name}}</a></h3>
-        <div class="project-tags">
-          <span class="tag" *ngFor="let tag of project.tags">{{tag}}</span>
-        </div>
-      </div>
+    <div class="project-details">
+      <h3><a href="/" target="_blank">{{project.name}}</a></h3>
+      <mat-chip-list class="project-tags">
+        <mat-chip *ngFor="let tag of project.tags" (click)="onSelectTag(tag)"
+                  [ngClass]="selectedTag === tag ? 'selected' : ''">{{tag}}</mat-chip>
+      </mat-chip-list>
+    </div>
   </article>
 </section>

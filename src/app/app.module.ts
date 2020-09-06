@@ -13,6 +13,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -22,17 +23,18 @@ import {MatTabsModule} from '@angular/material/tabs';
     PortfolioComponent,
     WorkExperienceComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    RouterModule,
-    MatInputModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatButtonModule,
-    MatTabsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        RouterModule,
+        MatInputModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MatButtonModule,
+        MatTabsModule,
+        MatChipsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
