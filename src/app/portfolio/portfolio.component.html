@@ -12,6 +12,7 @@
         <mat-chip *ngFor="let tag of project.tags" (click)="onSelectTag(tag)"
                   [ngClass]="selectedTag === tag ? 'selected' : ''">{{tag}}</mat-chip>
       </mat-chip-list>
+      <button mat-button (click)="showProjectDetail()">Open dialog</button>
     </div>
   </article>
 </section>

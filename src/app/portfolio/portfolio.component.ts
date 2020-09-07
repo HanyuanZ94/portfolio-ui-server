@@ -2,7 +2,8 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 // @ts-ignore
 import projects from 'src/assets/data/portfolio.json';
 import {Project} from '../../model/project';
-import {MatChip, MatChipEvent, MatChipList, MatChipSelectionChange} from '@angular/material/chips';
+import {MatDialog} from '@angular/material/dialog';
+import {ProjectDetailDialogComponent} from '../project-detail-dialog/project-detail-dialog.component';
 
 @Component({
   selector: 'app-portfolio',
@@ -13,7 +14,7 @@ export class PortfolioComponent implements OnInit {
   projects: Project[] = projects;
   selectedTag: string;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
   }
 
   ngOnInit(): void {
@@ -29,9 +30,14 @@ export class PortfolioComponent implements OnInit {
 
   isCardVisible(project: Project) {
     if (this.selectedTag && this.selectedTag !== '') {
-      return project.tags.includes(this.selectedTag)
+      return project.tags.includes(this.selectedTag);
     }
     return true;
   }
 
+  showProjectDetail() {
+    this.dialog.open(ProjectDetailDialogComponent, {
+      data: 'test'
+    });
+  }
 }
