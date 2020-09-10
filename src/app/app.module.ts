@@ -16,6 +16,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatChipsModule} from '@angular/material/chips';
 import {ProjectDetailDialogComponent} from './project-detail-dialog/project-detail-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     ContactComponent,
     PortfolioComponent,
     WorkExperienceComponent,
-    ProjectDetailDialogComponent
+    ProjectDetailDialogComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
