@@ -1,3 +1,5 @@
+@import "src/styles/variables";
+
 .flex {
   align-items: center;
   display: flex;
@@ -29,3 +31,83 @@ section {
     padding: 100px 0 130px 0;
   }
 }
+
+/* Grid styles -------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 5px;
+
+  h2 {
+    margin-top: 0;
+
+    a {
+      color: #333;
+      padding-bottom: 15px;
+      text-decoration-line: initial;
+    }
+  }
+
+  .project-details_divider {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+  }
+}
+
+.project-tags {
+  margin-top: 15px;
+  align-self: flex-end;
+  width: 100%;
+
+  .selected {
+    background: #cbeade;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 3px 5px;
+    background: #cbeade;
+    border-radius: 2px;
+    font-size: 12px;
+    margin: 2px 5px 2px 0;
+    color: #538a76;
+    cursor: pointer;
+
+    &:hover {
+      background: #e0f3eb;
+    }
+
+    &.active {
+      color: shade($tertiary_color, 20%);
+      background: tint($tertiary_color, 50%);
+    }
+  }
+}
+
+.notVisible {
+  opacity: 0.4;
+}
+
+.mat-chip.mat-standard-chip::after {
+  background: none;
+}
+

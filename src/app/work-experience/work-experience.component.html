@@ -1,1 +1,17 @@
+<section class="flex" id="work-experience">
+  <div class="header">
+    Work Experience
+  </div>
+</section>
+<section class="cards">
+  <article *ngFor="let experience of experiences">
+    <div class="work-header">
+      <h2>{{experience.post}}</h2>
+      <h3>{{experience.company}}</h3>
+      <div class="when">{{experience.period}}</div>
+    </div>
+    <div class="work-body">{{experience.description}}</div>
 
+
+  </article>
+</section>

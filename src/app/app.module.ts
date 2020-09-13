@@ -17,6 +17,8 @@ import {MatChipsModule} from '@angular/material/chips';
 import {ProjectDetailDialogComponent} from './project-detail-dialog/project-detail-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { CarouselComponent } from './carousel/carousel.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { CarouselComponent } from './carousel/carousel.component';
     MatButtonModule,
     MatTabsModule,
     MatChipsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
