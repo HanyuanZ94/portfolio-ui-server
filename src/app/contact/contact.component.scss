@@ -36,8 +36,8 @@ section#contact .header-bar {
 }
 
 section#contact .highlight {
-  color: #04c2c9;
-  font-weight: 600;
+  color: #5b6453;
+  font-weight: 500;
 }
 
 section#contact form {
@@ -46,7 +46,7 @@ section#contact form {
  }
 
 section#contact mat-form-field {
-  background: #1e242c;
+  background: #a0859f;
   border: 0;
   box-sizing: border-box;
   color: #fff;
@@ -60,6 +60,10 @@ section#contact mat-form-field {
 
 mat-label {
   color: #ffffff;
+}
+
+.mat-error {
+  color: #6d4646;
 }
 
 .mat-input-element::placeholder{
@@ -79,7 +83,7 @@ mat-label {
 
 @media screen and (min-width: 600px) {
   section#contact {
-    background: #252934;
+    background: #b9a7c8;
     color: #fff;
     padding-top: 175px;
   }

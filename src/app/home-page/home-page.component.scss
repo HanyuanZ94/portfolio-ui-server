@@ -6,13 +6,13 @@
 
 section#home {
   color: #fff;
-  height: calc(100vh + 53px);
+  height: calc(100vh);
   min-height: 360px + 53px;
   padding: 0 10px;
 }
 
 .canvas {
-  background: url('/assets/images/home_bg.png');
+  background: linear-gradient(45deg, #9AC1FF, #AB78A9);
   height: 100%;
   left: 0;
   position: absolute;
@@ -54,7 +54,7 @@ nav {
   left: 0;
   position: absolute;
   //background: #1b242f;
-  border-bottom: 3px solid #04c2c9;
+  //border-bottom: 3px solid #04c2c9;
   height: 50px;
   text-align: left;
   width: 100%;

@@ -9,13 +9,13 @@ export class HomePageComponent implements OnInit {
 
   links = [
     {
-      name: 'home'
-    },
-    {
       name: 'about'
     },
     {
       name: 'portfolio'
+    },
+    {
+      name: 'work experience'
     },
     {
       name: 'contact'

@@ -19,6 +19,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { CarouselComponent } from './carousel/carousel.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatDividerModule} from '@angular/material/divider';
     PortfolioComponent,
     WorkExperienceComponent,
     ProjectDetailDialogComponent,
-    CarouselComponent
+    CarouselComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
