@@ -20,6 +20,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import { AboutComponent } from './about/about.component';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AboutComponent } from './about/about.component';
     MatChipsModule,
     MatDialogModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

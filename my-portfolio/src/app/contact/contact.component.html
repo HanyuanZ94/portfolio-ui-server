@@ -30,7 +30,7 @@
     <form class="waypoint" (ngSubmit)="sendMail()">
       <mat-form-field>
         <mat-label>Email</mat-label>
-        <input matInput type="email" [formControl]="emailFormControl" placeholder="Ex. hello@example.com">
+        <input matInput type="email" [(ngModel)]="email" [email]="email" [formControl]="emailFormControl" placeholder="Ex. hello@example.com" name="email">
         <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
           Please enter a valid email address
         </mat-error>
@@ -41,7 +41,7 @@
 
       <mat-form-field>
         <mat-label>Object</mat-label>
-        <input matInput type="text" [formControl]="objectFormControl" placeholder="Ex. job opportunities">
+        <input matInput type="text" [(ngModel)]="object" [formControl]="objectFormControl" placeholder="Ex. job opportunities" name="object">
         <mat-error *ngIf="objectFormControl.hasError('required')">
           Please enter an object for the message
         </mat-error>
@@ -49,7 +49,7 @@
 
       <mat-form-field>
         <mat-label>Message</mat-label>
-        <textarea matInput></textarea>
+        <textarea matInput [(ngModel)]="text" name="text"></textarea>
       </mat-form-field>
 
       <button mat-flat-button type="submit" class="form_btn-submit">Send</button>

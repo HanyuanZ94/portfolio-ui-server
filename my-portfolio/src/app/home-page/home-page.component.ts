@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -28,4 +29,13 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e) {
+    let element = document.querySelector('#navbar');
+    if (window.pageYOffset > document.body.offsetHeight) {
+      element.classList.add('sticky');
+    } else {
+      element.classList.remove('sticky');
+    }
+  }
 }

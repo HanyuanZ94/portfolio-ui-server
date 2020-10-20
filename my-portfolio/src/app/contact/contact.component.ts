@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -14,12 +15,25 @@ export class ContactComponent implements OnInit {
   objectFormControl = new FormControl('', [
     Validators.required
   ]);
-  constructor() {}
+  email: string;
+  object: string;
+  text: string;
+
+  constructor(private http: HttpClient) {
+  }
 
   ngOnInit(): void {
   }
 
   sendMail() {
     console.log('to send mail');
+    const form = {
+      email: this.email,
+      object: this.object,
+      text: this.text
+    };
+    this.http.post('/api/sendmail', form).subscribe(data => {
+      console.log(data);
+    });
   }
 }
