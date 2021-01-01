@@ -24,9 +24,11 @@ section#home {
 section#home .text {
    font-size: 16pt;
    line-height: 20pt;
-   margin: 0 0 20px 0;
    pointer-events: none;
    z-index: 1;
+
+   margin: 0 0 20px 0;
+   padding-top: 20%;
 }
 
 section#home .highlight {
@@ -88,6 +90,34 @@ nav .link-wrap div {
   position: fixed;
   top: 0;
   background: #ffffff;
+}
+.interests {
+  padding-top: 2vh;
+}
+
+.animate__animated.animate__slideInUp {
+  --animate-duration: 2s;
+  --animate-delay: 4s;
+}
+
+.interest-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.interest-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #867581;
+  text-align: center;
+}
+
+.interest-sub-block {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2vw;
 }
 
 @media screen and (min-width: 600px) {

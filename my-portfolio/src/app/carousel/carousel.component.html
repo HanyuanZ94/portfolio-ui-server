@@ -1,17 +1,17 @@
 <article class="project-carousel">
 
-<ng-container *ngFor="let slide of slides; let i = index">
-  <img
-    *ngIf="i === currentSlide"
-    [src]="slide.src"
-    class="slide"
-  />
-</ng-container>
-<!-- controls -->
-<button class="control prev" (click)="onPreviousClick()">
-  <mat-icon>navigate_before</mat-icon>
-</button>
-<button class="control next" (click)="onNextClick()">
-  <mat-icon>navigate_next</mat-icon>
-</button>
+  <ng-container *ngFor="let slide of slides; let i = index">
+    <img
+      *ngIf="i === currentSlide"
+      [src]="slide.src"
+      class="slide"
+    />
+  </ng-container>
+  <!-- controls -->
+  <button class="control prev" *ngIf="slides.length>1" (click)="onPreviousClick()">
+    <mat-icon>navigate_before</mat-icon>
+  </button>
+  <button class="control next" *ngIf="slides.length>1" (click)="onNextClick()">
+    <mat-icon>navigate_next</mat-icon>
+  </button>
 </article>

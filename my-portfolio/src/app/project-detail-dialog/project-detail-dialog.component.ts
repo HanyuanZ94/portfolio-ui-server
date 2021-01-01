@@ -1,5 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+import {ProjectDetails} from '../../model/project-details';
 
 @Component({
   selector: 'app-project-detail-dialog',
@@ -8,14 +9,14 @@ import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 })
 export class ProjectDetailDialogComponent implements OnInit {
 
-  public slides = [
-    { src: 'http://placekitten.com/305/205' },
-    { src: 'https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509' },
-    { src: 'http://placekitten.com/305/205' },
-    { src: 'https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509' }
-  ];
+  // public slides = [
+  //   { src: 'http://placekitten.com/305/205' },
+  //   { src: 'https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509' },
+  //   { src: 'http://placekitten.com/305/205' },
+  //   { src: 'https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509' }
+  // ];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: string) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public projectDetails: ProjectDetails) { }
 
   ngOnInit(): void {
   }

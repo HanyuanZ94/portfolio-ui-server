@@ -2,18 +2,19 @@
   <div class="header">
     Portfolio
   </div>
-</section>
-<section class="cards">
-  <article *ngFor="let project of projects" [ngClass]="isCardVisible(project) ? '' : 'notVisible'">
-    <img class="article-img" src="http://placekitten.com/305/205" alt=" "/>
-    <div class="project-details">
-      <h2><a href="/" target="_blank">{{project.name}}</a></h2>
-      <button mat-stroked-button (click)="showProjectDetail()">View Details</button>
-      <mat-divider class="project-details_divider"></mat-divider>
-      <mat-chip-list class="project-tags">
-        <mat-chip *ngFor="let tag of project.tags" (click)="onSelectTag(tag)"
-                  [ngClass]="selectedTag === tag ? 'selected' : ''">{{tag}}</mat-chip>
-      </mat-chip-list>
-    </div>
-  </article>
+  <section class="cards">
+    <article class="project-bloc" *ngFor="let project of projects" [ngClass]="isCardVisible(project) ? '' : 'notVisible'">
+      <img class="article-img" [src]="project.img" alt=" "/>
+      <div class="project-details">
+        <h2 class="project-title"><a href="/" target="_blank">{{project.name}}</a></h2>
+        <div class="project-description">{{project.description}}</div>
+        <button class="project-details-btn" mat-stroked-button (click)="showProjectDetail(project.name)">View Details</button>
+        <mat-divider class="project-details_divider"></mat-divider>
+        <mat-chip-list class="project-tags">
+          <mat-chip *ngFor="let tag of project.tags" (click)="onSelectTag(tag)"
+                    [ngClass]="selectedTag === tag ? 'selected' : ''">{{tag}}</mat-chip>
+        </mat-chip-list>
+      </div>
+    </article>
+  </section>
 </section>

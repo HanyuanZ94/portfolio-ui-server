@@ -2,16 +2,18 @@
   <div class="header">
     Work Experience
   </div>
-</section>
-<section class="cards">
-  <article *ngFor="let experience of experiences">
-    <div class="work-header">
-      <h2>{{experience.post}}</h2>
-      <h3>{{experience.company}}</h3>
-      <div class="when">{{experience.period}}</div>
-    </div>
-    <div class="work-body">{{experience.description}}</div>
-
-
-  </article>
+  <section class="cards">
+    <article class="experience-bloc" *ngFor="let experience of experiences">
+      <div class="work-header">
+        <h2 class="work-title">{{experience.post}}</h2>
+        <h3>{{experience.company}}</h3>
+        <div class="when">{{experience.period}}</div>
+      </div>
+      <div class="work-body">
+        <ul class="work-description-list">
+          <li *ngFor="let item of experience.description">{{item}}</li>
+        </ul>
+      </div>
+    </article>
+  </section>
 </section>

@@ -1,34 +1,71 @@
 [
   {
-    "name": "Project 1",
+    "name": "Portal SFR",
     "url": "http://www.sfr.fr/",
     "tags": [
       "Spring Boot",
       "Angular",
       "HTML5/CSS3"
     ],
-    "img": "completetrailers.png",
-    "description": ""
+    "img": "/assets/images/portfolio-details/sfr_logo.png",
+    "description": "Portal site of SFR selling box and mobile plans"
   },
   {
-    "name": "Project 2",
+    "name": "BackOffice Box / Mobile",
     "url": "http://www.sfr.fr/",
     "tags": [
-      "Angular",
+      "Spring MVC",
+      "AngularJS",
+      "Amazon S3",
+      "Kafka",
       "HTML5/CSS3"
     ],
-    "img": "completetrailers.png",
-    "description": ""
+    "img": "/assets/images/portfolio-details/bo.png",
+    "description": "CMS for the PO/PM (project owner/manager) to configure the commercial information for the portal site"
   },
   {
-    "name": "Project 3",
+    "name": "Migration SpringBoot & Dockerlization",
     "url": "http://www.sfr.fr/",
     "tags": [
       "Spring Boot",
       "Angular",
       "HTML5/CSS3"
     ],
-    "img": "completetrailers.png",
-    "description": ""
+    "img": "/assets/images/portfolio-details/spring_mvc_boot.png",
+    "description": "Migrate project from Spring MVC to Spring Boot and dockerize the app"
+  },
+  {
+    "name": "Recommendations CMS",
+    "url": "http://www.sfr.fr/",
+    "tags": [
+      "Spring Boot",
+      "AngularJS",
+      "Amazon S3",
+      "Kafka",
+      "HTML5/CSS3"
+    ],
+    "img": "/assets/images/portfolio-details/sfr_recommendations.png",
+    "description": "New entry of system CMS which allows to configure the recommendations showed in the shopping cart, based on the items chosen by the clients"
+  },
+  {
+    "name": "Automatic Tests",
+    "url": "http://www.sfr.fr/",
+    "tags": [
+      "Python",
+      "Selenium"
+    ],
+    "img": "/assets/images/portfolio-details/selenium.png",
+    "description": "Integration testing with Selenium launched during each deployment in different environment"
+  },
+  {
+    "name": "Welcome Application Robot Pepper",
+    "url": "",
+    "tags": [
+      "Python",
+      "AngularJS",
+      "HTML5/CSS3"
+    ],
+    "img": "/assets/images/portfolio-details/pepper.jpg",
+    "description": "The welcome application installed in a Robot Pepper(a humanoid robot of Softbank), offers useful information for the visitors"
   }
 ]

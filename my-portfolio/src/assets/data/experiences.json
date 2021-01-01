@@ -3,18 +3,28 @@
     "post": "Développeur Fullstack",
     "company": "SFR",
     "period": "Match 2018 - PRESENT",
-    "description": "Develop and redesign of SFR web portal \nEvolve the eligibility service \nDevelop new features for the BackOffice of mobile/box online shop"
+    "description": [
+      "Develop and redesign of SFR web portal",
+      "Evolve the eligibility service",
+      "Develop new features for the BackOffice of mobile/box online shop"
+    ]
   },
   {
     "post": "Internship in Digital Factory",
     "company": "Capgemini",
     "period": "Mars 2017 - Sept 2017",
-    "description": "Develop a machine learning model to find potential startups \nImplement an interactive application installed in robot Pepper and its CMS application"
+    "description": [
+      "Develop a machine learning model to find potential startups",
+      "Implement an interactive application installed in robot Pepper and its CMS application"
+    ]
   },
   {
-    "post": "Internship of robotics development",
+    "post": "Robotics development internship",
     "company": "Orange",
     "period": "Sept 2016 - Mars 2017",
-    "description": "Develop a machine learning model to find potential startups \nImplement an interactive application installed in robot Pepper and its CMS application"
+    "description": [
+      "Develop a machine learning model to find potential startups",
+      "Implement an interactive application installed in robot Pepper and its CMS application"
+    ]
   }
 ]

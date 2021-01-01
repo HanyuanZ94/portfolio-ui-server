@@ -1,9 +1,11 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 // @ts-ignore
 import projects from 'src/assets/data/portfolio.json';
+import projectDetails from 'src/assets/data/project-details.json';
 import {Project} from '../../model/project';
 import {MatDialog} from '@angular/material/dialog';
 import {ProjectDetailDialogComponent} from '../project-detail-dialog/project-detail-dialog.component';
+import {ProjectDetails} from '../../model/project-details';
 
 @Component({
   selector: 'app-portfolio',
@@ -12,6 +14,7 @@ import {ProjectDetailDialogComponent} from '../project-detail-dialog/project-det
 })
 export class PortfolioComponent implements OnInit {
   projects: Project[] = projects;
+  projectDetails: ProjectDetails[] = projectDetails;
   selectedTag: string;
 
   constructor(public dialog: MatDialog) {
@@ -35,9 +38,9 @@ export class PortfolioComponent implements OnInit {
     return true;
   }
 
-  showProjectDetail() {
+  showProjectDetail(name: string) {
     this.dialog.open(ProjectDetailDialogComponent, {
-      data: 'test'
+      data: projectDetails.find(detail => detail.projectName === name)
     });
   }
 }

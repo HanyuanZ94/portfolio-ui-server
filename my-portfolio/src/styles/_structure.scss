@@ -47,6 +47,7 @@ section {
 .cards {
   max-width: 960px;
   margin: 0 auto 30px;
+  width: 96%;
 }
 
 article {
@@ -74,8 +75,24 @@ article {
 
   .project-details_divider {
     margin-top: 2vh;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
   }
+}
+
+.project-details-btn {
+  font-size: 12px;
+  line-height: 22px !important;
+  padding: 2px 7px !important;
+}
+
+.project-title {
+  height: 6vh;
+}
+
+.project-description {
+  font-size: 12px;
+  height: 10vh;
+  margin-bottom: 12px;
 }
 
 .project-tags {
@@ -112,11 +129,28 @@ article {
   opacity: 0.4;
 }
 
+.mat-chip {
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .mat-chip.mat-standard-chip::after {
   background: none;
 }
 
-@media screen and (min-width: 960px){
+.mat-chip.mat-standard-chip {
+  padding: 2px 8px;
+  border-radius: 16px;
+  min-height: 26px;
+  height: 1px;
+}
+
+.mat-dialog-container {
+  min-width: 80vw;
+  min-height: 60vh;
+}
+
+@media screen and (min-width: 960px) {
   .flex-50 {
     box-sizing: border-box;
     flex: 1 1 50%;

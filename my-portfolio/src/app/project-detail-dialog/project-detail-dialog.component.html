@@ -1,4 +1,4 @@
 <div mat-dialog-content>
-  <app-carousel [slides]="slides"></app-carousel>
-  {{data}}
+  <app-carousel *ngIf="projectDetails.slides.length" [slides]="projectDetails.slides"></app-carousel>
+  <div class="carousel-detail-description">{{projectDetails.description}}</div>
 </div>
