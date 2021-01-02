@@ -1,0 +1,31 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "angular",
+      "image": "hanyuanzhang/portfolio-angular:test-0.0.1",
+      "hostname": "angular",
+      "portMappings": [
+        {
+          "hostPort": 4200,
+          "containerPort": 4200
+        }
+      ],
+      "essential": true,
+      "memory": 300
+    },
+    {
+      "name": "express",
+      "image": "hanyuanzhang/portfolio-express:test-0.0.1",
+      "hostname": "express",
+      "portMappings": [
+        {
+          "hostPort": 3000,
+          "containerPort": 3000
+        }
+      ],
+      "essential": false,
+      "memory": 300
+    }
+  ]
+}
