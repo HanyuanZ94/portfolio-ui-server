@@ -2,6 +2,16 @@ version: '2' # specify docker-compose version
 
 # Define the services/containers to be run
 services:
+  nginx:
+    depends_on:
+      - angular
+      - express
+    restart: always # because it is routing traffic to our entire app
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - '0.0.0.0:80:80'
   angular: # name of the first service
     build: my-portfolio # specify the directory of the Dockerfile
     ports:
