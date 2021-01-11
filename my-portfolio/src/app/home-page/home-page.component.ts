@@ -40,7 +40,7 @@ export class HomePageComponent implements AfterViewInit {
     this.contactOffset = document.getElementById('contact').offsetTop;
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   checkOffsetTop() {
     this.onWindowScroll();
     if (window.pageYOffset >= this.aboutOffset && window.pageYOffset < this.portfolioOffset - Constants.OFFSET_MARGIN) {

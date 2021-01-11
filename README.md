@@ -6,4 +6,4 @@ Push to docker hub
 docker build -t <hub-user>/<repo-name>[:<tag>] .
 docker push <hub-user>/<repo-name>[:<tag>]
 
- git archive -v -o portfolio.zip --format=zip HEAD
+git archive -v -o portfolio.zip --format=zip HEAD
