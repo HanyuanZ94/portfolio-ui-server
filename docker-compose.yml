@@ -11,7 +11,7 @@ services:
       dockerfile: Dockerfile
       context: ./nginx
     ports:
-      - '0.0.0.0:80:80'
+      - '80:80'
   angular: # name of the first service
     build: my-portfolio # specify the directory of the Dockerfile
     ports:
