@@ -1,4 +1,4 @@
-version: '2' # specify docker-compose version
+version: '3' # specify docker-compose version
 
 # Define the services/containers to be run
 services:
@@ -12,14 +12,24 @@ services:
       context: ./nginx
     ports:
       - '80:80'
+    networks:
+      - backbone
   angular: # name of the first service
     build: my-portfolio # specify the directory of the Dockerfile
     ports:
       - "4200:4200" # specify port forewarding
     volumes:
       - ./my-portfolio:/app # this will enable changes made to the angular app reflect in the container
+    networks:
+      - backbone
 
   express: #name of the second service
     build: node-server # specify the directory of the Dockerfile
     ports:
       - "3000:3000" #specify ports forewarding
+    networks:
+      - backbone
+
+networks:
+  backbone:
+    driver: bridge
