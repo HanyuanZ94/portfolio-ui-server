@@ -12,20 +12,13 @@
           "containerPort": 80
         }
       ],
-      "links": ["angular", "express"],
+      "links": ["angular"],
       "memory": 100
     },
     {
       "name": "angular",
       "image": "hanyuanzhang/portfolio-angular:test-0.0.2",
       "hostname": "angular",
-      "essential": false,
-      "memory": 300
-    },
-    {
-      "name": "express",
-      "image": "hanyuanzhang/portfolio-express:test-0.0.2",
-      "hostname": "express",
       "essential": false,
       "memory": 300
     }

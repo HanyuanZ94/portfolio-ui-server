@@ -5,7 +5,7 @@ services:
   nginx:
     depends_on:
       - angular
-      - express
+#      - express
     restart: always # because it is routing traffic to our entire app
     build:
       dockerfile: Dockerfile
@@ -22,13 +22,12 @@ services:
       - ./my-portfolio:/app # this will enable changes made to the angular app reflect in the container
     networks:
       - backbone
-
-  express: #name of the second service
-    build: node-server # specify the directory of the Dockerfile
-    ports:
-      - "3000:3000" #specify ports forewarding
-    networks:
-      - backbone
+#  express: #name of the second service
+#    build: node-server # specify the directory of the Dockerfile
+#    ports:
+#      - "3000:3000" #specify ports forewarding
+#    networks:
+#      - backbone
 
 networks:
   backbone:
