@@ -3,6 +3,7 @@ version: '3' # specify docker-compose version
 # Define the services/containers to be run
 services:
   nginx:
+    image: hanyuanzhang/portfolio-nginx:test-0.0.2
     depends_on:
       - angular
 #      - express
@@ -15,9 +16,10 @@ services:
     networks:
       - backbone
   angular: # name of the first service
+    image: hanyuanzhang/portfolio-angular:test-0.0.2
     build: my-portfolio # specify the directory of the Dockerfile
     ports:
-      - "4200:4200" # specify port forewarding
+      - "4200:4200"
     volumes:
       - ./my-portfolio:/app # this will enable changes made to the angular app reflect in the container
     networks:

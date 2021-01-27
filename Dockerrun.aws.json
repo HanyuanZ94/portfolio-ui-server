@@ -20,6 +20,12 @@
       "image": "hanyuanzhang/portfolio-angular:test-0.0.2",
       "hostname": "angular",
       "essential": false,
+      "portMappings": [
+        {
+          "hostPort": 4200,
+          "containerPort": 4200
+        }
+      ],
       "memory": 300
     }
   ]
