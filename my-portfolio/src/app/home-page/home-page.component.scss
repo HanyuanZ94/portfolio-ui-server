@@ -86,11 +86,6 @@ nav .link-wrap div {
   transition: color 0.5s;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  background: #ffffff;
-}
 .interests {
   padding-top: 2vh;
 }
@@ -120,6 +115,10 @@ nav .link-wrap div {
   padding: 2vw;
 }
 
+nav#navbar {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 600px) {
   section#home .text {
     font-size: 32pt;
@@ -140,6 +139,14 @@ nav .link-wrap div {
     font-size: initial;
     margin: 0 20px;
     padding: initial;
+  }
+  nav#navbar {
+    visibility: visible;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    background: #ffffff;
   }
 }
 

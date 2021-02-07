@@ -4,6 +4,12 @@ section#contact {
   position: relative;
 }
 
+section#contact {
+  background: #b9a7c8;
+  color: #fff;
+  padding-top: 175px;
+}
+
 section#contact svg {
   left: 0;
   position: absolute;
@@ -82,18 +88,12 @@ mat-label {
 }
 
 @media screen and (min-width: 600px) {
-  section#contact {
-    background: #b9a7c8;
-    color: #fff;
-    padding-top: 175px;
-  }
   .header {
     font-size: 30pt;
   }
   .header-bar {
     margin: 25px 0 100px 0;
   }
-
   section#contact form {
     min-width: 500px;
   }
