@@ -1,0 +1,59 @@
+[
+  {
+    "projectName": "Portal SFR",
+    "description": "The site is built with SpringBoot and Angular.\n\nIt consumes several micro-services including testing eligibility of the address for box plans, retrieving configured information in CMS, authenticating the clients, and generating an order with the items chosen by clients.\n\nThe application is dockerized, and deployed with Kubernetes. The logs are centralised and visualised by Kibana and the application metrics are analysed via Grafana.",
+    "slides": [
+      {
+        "src": "/assets/images/portfolio-details/sfr-fixe.png"
+      },
+      {
+        "src": "/assets/images/portfolio-details/sfr-mobile.png"
+      }
+    ]
+  },
+  {
+    "projectName": "BackOffice Box / Mobile",
+    "description": "The site is built with SpringMVC and AngularJS. It's the CMS used by the project owners to configure the commercial information for box and mobile plans.\n\nThe configurations are stored in MongoDB and PostgreSQL.",
+    "slides": [
+      {
+        "src": "/assets/images/portfolio-details/bo_bol.png"
+      }
+    ]
+  },
+  {
+    "projectName": "Migration SpringBoot & Dockerlization",
+    "description": "The propose is to migrate an SpringMVC/AngularJS application to SpringBoot/AngularJS, dockerlize and deploy with Kubernetes.\n\nThe migration includes updating the obsolete dependencies, changing XML configurations to java configurations, refactoring the security part, etc..\n\n",
+    "slides": [
+    ]
+  },
+  {
+    "projectName": "Recommendations CMS",
+    "description": "In order to personalize the recommendations offered for clients based on the box/mobile plans, devices, and options chosen, I have developed this new entry in of BackOffice, which allows to upload/download recommendations via csv files, show latest uploaded items, ans publish the file to our Amazon S3 server. Once a new file is published in the S3, a notification Kafka will be sent, which will be detected by another service.\n\nThis latter service continues listening to the Kafka notifications, and downloads all the updated files. It exposes rest services of calculating recommendations using the information in the latest csv file.",
+    "slides": [
+      {
+        "src": "/assets/images/portfolio-details/bo_recommendations.png"
+      }
+    ]
+  },
+  {
+    "projectName": "Automatic Tests",
+    "description": "A series of tests are launched automatically after each deployment of the application Angular. The tests are written in Python using Selenium.\n\nThe test cases are defined by the project owner which covers the fundamental functionalities of the site SFR.",
+    "slides": [
+    ]
+  },
+  {
+    "projectName": "Welcome Application Robot Pepper",
+    "description": "The application is written in Python and AngularJS, and installed in the tablet of the robot Pepper. With the application, the visitors can demand information of Les Fontaines using voice or the tablet. There are also functions for amusement like dancing to the music for around twenty seconds.\n\nA BackOffice is also built for the personnel to update the content.",
+    "slides": [
+      {
+        "src": "/assets/images/portfolio-details/appli_pepper_3.png"
+      },
+      {
+        "src": "/assets/images/portfolio-details/appli_pepper_1.png"
+      },
+      {
+        "src": "/assets/images/portfolio-details/appli_pepper_2.png"
+      }
+    ]
+  }
+]

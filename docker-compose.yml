@@ -1,12 +1,10 @@
-version: '3' # specify docker-compose version
+version: '3'
 
-# Define the services/containers to be run
 services:
   nginx:
-    image: hanyuanzhang/portfolio-nginx:test-0.0.2
+    image: "hanyuanzhang/portfolio-nginx:0.0.2"
     depends_on:
-      - angular
-#      - express
+      - express
     restart: always # because it is routing traffic to our entire app
     build:
       dockerfile: Dockerfile
@@ -15,21 +13,22 @@ services:
       - '80:80'
     networks:
       - backbone
-  angular: # name of the first service
-    image: hanyuanzhang/portfolio-angular:test-0.0.2
-    build: my-portfolio # specify the directory of the Dockerfile
-    ports:
-      - "4200:4200"
-    volumes:
-      - ./my-portfolio:/app # this will enable changes made to the angular app reflect in the container
-    networks:
-      - backbone
-#  express: #name of the second service
-#    build: node-server # specify the directory of the Dockerfile
+#  angular: # name of the first service
+#    image: hanyuanzhang/portfolio-angular:test-0.0.2
+#    build: my-portfolio # specify the directory of the Dockerfile
 #    ports:
-#      - "3000:3000" #specify ports forewarding
+#      - "4200:4200"
+#    volumes:
+#      - ./my-portfolio:/app # this will enable changes made to the angular app reflect in the container
 #    networks:
 #      - backbone
+  express:
+    image: "hanyuanzhang/portfolio-express:0.0.2"
+    build: node-server # specify the directory of the Dockerfile
+    ports:
+      - "3000:3000" #specify ports forewarding
+    networks:
+      - backbone
 
 networks:
   backbone:

@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "nginx",
-      "image": "hanyuanzhang/portfolio-nginx:0.0.2",
+      "image": "hanyuanzhang/portfolio-nginx:test-0.0.2",
       "hostname": "nginx",
       "essential": true,
       "portMappings": [
@@ -12,19 +12,21 @@
           "containerPort": 80
         }
       ],
-      "links": ["express"]
+      "links": ["angular"],
+      "memory": 100
     },
     {
-      "name": "express",
-      "image": "hanyuanzhang/portfolio-express:0.0.2",
-      "hostname": "express",
+      "name": "angular",
+      "image": "hanyuanzhang/portfolio-angular:test-0.0.2",
+      "hostname": "angular",
       "essential": false,
       "portMappings": [
         {
-          "hostPort": 3000,
-          "containerPort": 3000
+          "hostPort": 4200,
+          "containerPort": 4200
         }
-      ]
+      ],
+      "memory": 300
     }
   ]
 }
