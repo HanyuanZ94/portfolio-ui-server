@@ -12,7 +12,8 @@
           "containerPort": 80
         }
       ],
-      "links": ["express"]
+      "links": ["express"],
+      "memory": 300
     },
     {
       "name": "express",
@@ -24,7 +25,8 @@
           "hostPort": 3000,
           "containerPort": 3000
         }
-      ]
+      ],
+      "memory": 100
     }
   ]
 }
